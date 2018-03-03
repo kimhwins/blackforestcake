@@ -1,0 +1,446 @@
+/*@font-face {
+	font-family: "LEngineer";
+	src: url("fonts/lengineer-regular-webfont.eot");
+	src: 
+	url("fonts/lengineer-regular-webfont.woff") format("woff"),
+	url("fonts/LEngineer-Regular.otf") format("opentype"),
+	url("fonts/lengineer-regular-webfont.svg#filename") format("svg");
+}*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+  	height: 100%;
+  	margin: 0;
+  	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+
+img {
+	width: 100%;
+}
+
+header{
+	display: block;
+	background: url("images/blackforestcake5.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center top;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+
+.header-image-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%); /* add browser-prefixes */
+    transform: translate(-50%, -50%); /* add browser-prefixes */
+    /*make this bigger in vertical orientation bc it's tiny on mobile*/
+}
+
+.header-image-2 {
+	display: none;
+	top: 50%;
+    left: 50%; 
+}
+
+.header2{
+	display: none;
+}
+
+.overview{
+	background: #f3e9de;
+	padding-bottom: 6.5%;
+}
+
+.overview img{
+	width: 22.5%; /*make it bigger for mobile vertical orientation  cuz it's tiny at this width*/
+	margin: 0 auto 0 auto;
+	padding: 4% 0 3% 0;
+	display: block;
+}
+
+.overview p{
+	text-align: center;
+	font-size: 1.65vw;
+	margin: 0 6% 0% 6%;
+}
+
+.text{
+/*	font-family: 'LEngineer', sans-serif;
+	-webkit-transform: scaleY(0.65);
+    transform: scaleY(0.65);
+    letter-spacing: -0.7px;
+    font-size: 2.45vw;
+    margin: 0 8% 0 8%;*/
+	
+    font-family: "Montserrat";
+	font-size: 1.5vw;
+	line-height: 1.75;
+	-webkit-transform: scaleX(0.9);
+    transform: scaleX(0.9);
+    letter-spacing: 0.3px;
+    opacity: 0.8;
+}
+
+.ingredients{
+	display: block;
+	background: url("images/blackforestcake6.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center top;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.ingredients-header-1{
+	width: 30%;
+	margin: 0 auto 0 auto;
+	padding: 5% 0 3% 0;
+	display: block;
+}
+
+.ingredients2 {
+	display: none;
+	background: url("images/blackforestcake6.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center top;
+    width: 100%;
+    padding-bottom: 5%;
+    padding-left: 3.5%;
+}
+
+.ingredients2 img{
+	width: 80%;
+	margin: 0 auto 0 auto;
+	padding: 5% 0 3% 0;
+	display: block;
+}
+
+.ingredients2 p{
+	text-align: left;
+	font-size: 1.6vw;
+}
+
+.ingredients-header-2 {
+	display:none;
+}
+
+/*.instructions li{
+	padding-bottom: 2%
+}*/
+
+.row{
+	width:100%; 
+	margin:auto; 
+	display: flex;
+	padding: 0 10% 0 10%;
+}
+
+.half-column{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+.list1{
+	color: white;
+	text-align: left;
+	line-height: 2.5;
+}
+
+.list2{
+	color: white;
+	text-align: left;
+}
+
+.instructions{
+	background: #f3e9de;
+	padding: 0 4% 4% 5%;
+}
+
+.instructions img{
+	width: 36%; /*make it bigger for mobile vertical orientation  cuz it's tiny at this width*/
+	margin: 0 auto 0 auto;
+	padding: 4% 0 3% 0;
+	display: block;
+}
+
+.instructions p{
+	text-align: left;
+	font-size: 1.6vw;
+}
+
+.instructions li{
+	padding-bottom: 2%
+}
+
+.footer{
+	display: block;
+	background: url("images/blackforestcake7.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center top;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.footer1{
+	margin: 0 auto 0 auto;
+	padding-top: 3%;
+	display: block;
+	width: 35%;
+}
+
+.footer2{
+	display: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+	header{
+		background: url("images/header-mobile.png");
+		background-position: center top;
+		background-size: cover;
+	}
+
+	.header-image-1{
+		display:none;
+	}
+
+	.overview img{
+		width: 65%;
+	}
+
+	.overview p{
+		font-size: 4.25vw;
+		padding-bottom: 3%;
+	}
+
+	.ingredients {
+		display: none;
+	}
+
+	.ingredients2 img{
+		width: 80%;
+	}
+
+	.ingredients2 {
+		display: block;
+	}
+
+	.instructions img{
+		width: 90%;
+		padding-top: 8%;
+	}
+
+	.instructions p{
+		font-size: 4vw;
+	}
+
+	.instructions ol{
+		font-size: 4vw;
+	}
+
+	.footer1{
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 501px) {
+
+	header{
+		background-position: center;
+		background-size: cover;
+	}
+
+	.header-image-1{
+		display:none;
+	}
+
+	.header-image-2{
+		display:block;
+		width: 60%;
+		transform: translate(0%, 30%);
+		-webkit-transform: translate(0%, 30%);
+    	-moz-transform: translate(0%, 30%);
+	}
+
+	.overview img{
+		width: 40%;
+	}
+
+	.overview p{
+		font-size: 3.5vw;
+		padding-bottom: 3%;
+	}
+
+	.ingredients {
+		display: none;
+	}
+
+	.ingredients2 {
+		display: block;
+	}
+
+	.ingredients2 ul{
+		line-height: 1.5;
+	}
+
+	.ingredients2 img{
+		width: 50%;
+	}
+
+	.instructions img{
+		width: 60%;
+		padding-top: 8%;
+	}
+
+	.instructions p{
+		font-size: 3.3vw;
+	}
+
+	.instructions ol{
+		font-size: 3.3vw;
+	}
+
+	.footer1{
+		width: 55%;
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+
+	header{
+		background-position: center;
+		background-size: cover;
+	}
+
+	.overview img{
+		width: 40%;
+	}
+
+	.overview p{
+		font-size: 3.5vw;
+		padding-bottom: 3%;
+	}
+
+	.ingredients {
+		display: none;
+	}
+
+	.ingredients2 {
+		display: block;
+	}
+
+	.ingredients2 ul{
+		line-height: 1.5;
+	}
+
+	.ingredients2 img{
+		width: 50%;
+	}
+
+	.instructions img{
+		width: 60%;
+		padding-top: 8%;
+	}
+
+	.instructions p{
+		font-size: 3.3vw;
+	}
+
+	.instructions ol{
+		font-size: 3.3vw;
+	}
+
+	.footer1{
+		width: 55%;
+	}
+}
+@media print {
+
+	header{
+		display: none;
+	}
+
+	.header2{
+		display:block;
+	}
+
+	.header2 img{
+		width: 50%;
+	}
+
+	.overview {
+		background: white;
+		padding-bottom: 1%;
+	}
+
+	.overview img{
+		padding-top: 1%;
+	}
+
+	.overview p{
+		font-size: 12pt;
+	}
+
+	.ingredients{
+		background: white;
+		padding-bottom: 1%;
+	}
+
+	.ingredients-header-1{
+		display:none;
+	}
+
+	.ingredients-header-2 {
+		width: 30%;
+		margin: 0 auto 0 auto;
+		padding: 5% 0 3% 0;
+		display: block;
+	}
+
+	.row {
+		padding: 0 5%;
+	}
+
+	.list1{
+		color: black;
+		font-size: 10pt;
+	}
+
+	.footer{
+		background: white;
+	}
+
+	.footer1{
+		display: none;
+	}
+
+	.footer2{
+		display:block;
+		margin: 0 auto 0 auto;
+		padding-top: 1%;
+		display: block;
+		width: 25%;
+	}
+}
+
+
